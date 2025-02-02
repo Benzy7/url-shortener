@@ -5,12 +5,14 @@ const serverConfig = require('./configs/server');
 const databaseConfig = require('./configs/database');
 const urlRoutes = require('./routes/urlRoutes');
 const errorHandler = require('./middlewares/errorHandler');
+const rateLimiter = require('./configs/rateLimit');
 
 const app = express();
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
+app.use(rateLimiter); 
 app.use(errorHandler);
 
 // Database connection
