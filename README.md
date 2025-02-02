@@ -88,14 +88,14 @@ npm start
 ## API Documentation 📚
 ### Endpoints
 | Method | Endpoint    | Description               | Parameters |
-|--------|------------|---------------------------|------------|
-| POST   | /api/shorten | Create short URL        | `{ "longUrl": "string" }` |
-| GET    | /:shortId  | Redirect to original URL | URL parameter: `shortId` |
+|--------|-------------|---------------------------|------------|
+| POST   | /api/url/shorten | Create short URL        | `{ "longUrl": "string" }` |
+| GET    | /api/url/:shortId  | Redirect to original URL | URL parameter: `shortId` |
 
 ### Example Requests
 #### Create Short URL:
 ```http
-POST /api/shorten
+POST /api/url/shorten
 Content-Type: application/json
 
 {
