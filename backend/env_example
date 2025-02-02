@@ -1,0 +1,9 @@
+ENV=xxxxx
+
+PROTOCOL=xxxxx
+HOST=xxxxx
+PORT=xxxxx
+
+MONGODB_URI=xxxxx
+
+FRONT_URL=xxxxx
